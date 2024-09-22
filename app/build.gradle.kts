@@ -7,7 +7,7 @@ plugins {
     alias(libs.plugins.jetbrains.kotlin.android)
 }
 
-val localProperties = gradleLocalProperties(File(rootDir.path + "/app/"), providers)
+val localProperties = gradleLocalProperties(File(rootDir.path), providers)
 val backendUrl = localProperties.getProperty("BACKEND_SERVER_URL")
 val glideClientId = localProperties.getProperty("GLIDE_CLIENT_ID")
 
